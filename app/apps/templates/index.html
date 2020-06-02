@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+  </head>
+  <body>
+    <h1>Please fill the form</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+    
+      <input type="submit" name="" value="register">
+
+    </form>
+  </body>
+</html>
